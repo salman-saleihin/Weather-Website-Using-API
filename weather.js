@@ -14,7 +14,7 @@ button.addEventListener( "click" , function(){
 
 function doSearch(){
 
-        fetch("http://api.openweathermap.org/data/2.5/weather?q="+inputValue.value+"&APPID=3ea2a0736f833ea110ed53a047a50563")
+        fetch("https://api.openweathermap.org/data/2.5/weather?q="+inputValue.value+"&APPID=3ea2a0736f833ea110ed53a047a50563")
         .then(res => res.json())
         .then(data => {
 
