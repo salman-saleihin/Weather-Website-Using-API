@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <style>
         body {
-            background: url(images/bg-image.jpg) no-repeat;
+            background: url(images/bg-weather.jpg) no-repeat;
             background-size: cover;
             height: 100vh;
         }
@@ -22,20 +22,21 @@
     <div class="container">
         <form class="col-md-6 m-auto py-5">
             <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="Enter a location for Weather ...">
-                <div class="input-group-append">
-                    <button type="button" class="btn btn-danger">Search</button>
+                <input id="inputValue"  type="text" class="form-control " placeholder="Enter a location for Weather ...">
+                <div class= input-group-append">
+                    <button id="button" type="button" class= "btn btn-danger">Search</button>
                 </div>
             </div>
         </form>
         <div class="weather-status text-white text-center">
             <img src="https://openweathermap.org/img/wn/02d@2x.png" alt="">
-            <h1>Dhaka</h1>
-            <h3><span>38.06</span>&deg;C</h3>
-            <h1 class="lead">Clouds</h1>
+            <h1 id="loc-name">City Name</h1>
+            <h3><span id="loc-temp">Temperature in </span> kelvin</h3>
+            <h1 class="desc">Situation</h1>
         </div>
     </div>
 
+    <script src="weather.js"></script>
 </body>
 
 </html>
